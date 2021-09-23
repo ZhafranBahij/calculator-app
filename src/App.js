@@ -75,16 +75,13 @@ class Calculator extends react.Component {
         number += operations.charAt(i);
       }
     }
-    this.temp_number_group.push(parseInt(number));
-    console.log(this.temp_number_group);
-    let number1 = this.temp_number_group.pop();
-    let number2 = this.temp_number_group.pop();
-    let operation = this.temp_operator_group.pop();
-    number = this.some_operation(number1, number2, operation);
-    console.log(number);
-    console.log(`${number1} ${operation} ${number2} = ${number}`);
+
+    this.temp_number_group.push(parseInt(number)); //Menampung bilangan dalam bentuk ingeger ke array
+    let number1 = this.temp_number_group.pop(); //Memberikan nilai bilangan terakhir
+    let number2 = this.temp_number_group.pop(); //Memberikan nilai bilangan terakhir kedua
+    let operation = this.temp_operator_group.pop(); //Memberikan operator terakhir
+    number = this.some_operation(number1, number2, operation); // Melakukan operasi
     this.temp_caltext = number.toString();
-    console.log(this.temp_caltext);
     this.setState({ calculator_text: this.temp_caltext });
   }
 
@@ -106,7 +103,9 @@ class Calculator extends react.Component {
   render() {
     return (
       <div class="container d-grid gap-3 text-white">
-        <div class="visible">{this.state.calculator_text}</div>
+        <div class="result visible bg-white text-dark text-end ">
+          <h3>{this.state.calculator_text}</h3>
+        </div>
         <div class="row justify-content-between">
           <div
             class="col bg-dark text-white text-center"
