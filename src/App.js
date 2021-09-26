@@ -2,14 +2,6 @@ import react from "react";
 import "../node_modules/bootstrap/dist/css/bootstrap.min.css";
 import "./App.css";
 
-function NumBotton(property) {
-  return (
-    <div class="col bg-dark text-white text-center" name={property.numeric}>
-      {property.numeric}
-    </div>
-  );
-}
-
 class Calculator extends react.Component {
   constructor(property) {
     super(property);
@@ -62,6 +54,18 @@ class Calculator extends react.Component {
   }
 
   handleResult() {
+    let x = 0;
+    for (let i = 0; i < this.operators.length; i++) {
+      if (this.temp_caltext.includes(this.operators[i])) {
+        x += 1;
+      }
+    }
+
+    if (x === 0) {
+      alert("Well, i hope you don't use '=' if it doesn't has any operator");
+      return;
+    }
+
     let operations = this.temp_caltext;
     let number = "";
     for (let i = 0; i < operations.length; i++) {
