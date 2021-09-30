@@ -1,0 +1,25 @@
+{
+  "files": {
+    "main.css": "/ZhafranBahij.github.io/calculator-app/static/css/main.420d1a9f.chunk.css",
+    "main.js": "/ZhafranBahij.github.io/calculator-app/static/js/main.dda0d8f9.chunk.js",
+    "main.js.map": "/ZhafranBahij.github.io/calculator-app/static/js/main.dda0d8f9.chunk.js.map",
+    "runtime-main.js": "/ZhafranBahij.github.io/calculator-app/static/js/runtime-main.7cec4678.js",
+    "runtime-main.js.map": "/ZhafranBahij.github.io/calculator-app/static/js/runtime-main.7cec4678.js.map",
+    "static/css/2.f2512455.chunk.css": "/ZhafranBahij.github.io/calculator-app/static/css/2.f2512455.chunk.css",
+    "static/js/2.86d95ecb.chunk.js": "/ZhafranBahij.github.io/calculator-app/static/js/2.86d95ecb.chunk.js",
+    "static/js/2.86d95ecb.chunk.js.map": "/ZhafranBahij.github.io/calculator-app/static/js/2.86d95ecb.chunk.js.map",
+    "static/js/3.4c995935.chunk.js": "/ZhafranBahij.github.io/calculator-app/static/js/3.4c995935.chunk.js",
+    "static/js/3.4c995935.chunk.js.map": "/ZhafranBahij.github.io/calculator-app/static/js/3.4c995935.chunk.js.map",
+    "index.html": "/ZhafranBahij.github.io/calculator-app/index.html",
+    "static/css/2.f2512455.chunk.css.map": "/ZhafranBahij.github.io/calculator-app/static/css/2.f2512455.chunk.css.map",
+    "static/css/main.420d1a9f.chunk.css.map": "/ZhafranBahij.github.io/calculator-app/static/css/main.420d1a9f.chunk.css.map",
+    "static/js/2.86d95ecb.chunk.js.LICENSE.txt": "/ZhafranBahij.github.io/calculator-app/static/js/2.86d95ecb.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.7cec4678.js",
+    "static/css/2.f2512455.chunk.css",
+    "static/js/2.86d95ecb.chunk.js",
+    "static/css/main.420d1a9f.chunk.css",
+    "static/js/main.dda0d8f9.chunk.js"
+  ]
+}
