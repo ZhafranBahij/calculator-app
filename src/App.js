@@ -24,11 +24,7 @@ class Calculator extends react.Component {
     let calculator_length = this.state.calculator_text.length;
 
     // Check if the operators was in front
-    if (
-      this.operators.includes(name) &&
-      calculator_length === 0 &&
-      name !== "-"
-    ) {
+    if (this.operators.includes(name) && calculator_length === 0) {
       alert("Don't input operator early!");
       return;
     }
@@ -97,7 +93,12 @@ class Calculator extends react.Component {
       return num1 + num2;
     }
     if (op === "-") {
-      return num1 - num2;
+      if (num1 - num2 < 0) {
+        alert(
+          "I'm sorry, i can't operate it if the number is below zero. So, i'll absolue it."
+        );
+      }
+      return Math.abs(num1 - num2);
     }
     if (op === "x") {
       return num1 * num2;
