@@ -109,6 +109,7 @@ class Calculator extends react.Component {
 
   Number(chara, type = "operator") {
     let x;
+    //* Jika itu merupakan angka
     if (type === "num") {
       x = (
         <div
@@ -120,6 +121,7 @@ class Calculator extends react.Component {
         </div>
       );
     } else {
+      //* Jika itu merupakan operator
       x = (
         <div
           class="col text-white text-center bg-primary"
